@@ -4,13 +4,17 @@ import NavBar from './component/NavBar';
 import ItemListContainer from './component/ItemListContainer';
 
 
+
+
 function App() {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer name = "producto1"></ItemListContainer>
-      <ItemListContainer name = "producto3"/>
-      <ItemListContainer name = "producto2"/>
+      <ItemListContainer  greeting = "producto1"></ItemListContainer>
+      <ItemListContainer  greeting = "producto3"/>
+      <ItemListContainer  greeting = "producto2"/>
+
+      <carrito/>
       <h1 className="text-3xl font-bold underline">distribucion de productos nestle</h1>
     </div>
     
