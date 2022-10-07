@@ -11,7 +11,7 @@ function App() {
       
       <BrowserRouter>
         <NavBar/>
-        <h1 className="text-3xl font-bold underline">distribucion de productos nestle</h1>
+        <h1 className="text-3xl font-bold underline flex justify-center">distribucion de productos nestle</h1>
         <Routes>
           <Route path={'/'} element={<ItemList/>}/>
           

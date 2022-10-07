@@ -6,15 +6,15 @@ import Carrito from './carrito';
 
 const NavBar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-red-600">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">DistribucionFull</a>
+                <a className="btn btn-ghost normal-case text-xl ">DistribucionFull</a>
             </div>
             <div className="flex-none">
                 {/* <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered" />
                 </div> */}
-                <ul className="menu menu-horizontal p-0">
+                <ul className="menu menu-horizontal p-0 ">
                     <li><a>nosotros</a></li>
                     <li><a>productos</a></li>
                     <li><a>login</a></li>

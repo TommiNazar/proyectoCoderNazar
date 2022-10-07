@@ -27,8 +27,10 @@ const ItemList = () => {
 
     return (
         <>
-        <div>itemList</div>
+        <div className='text-3xl font-bold m-7 flex justify-center'>itemList</div>
+        <div className='flex flex-row justify-center'>
         {items.map ( i => <ItemCard key = {i.id} {...i} />)}
+        </div>
         </>
     
     )
