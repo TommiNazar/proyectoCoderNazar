@@ -21,14 +21,14 @@ const ItemList = () => {
         return new Promise (resolve =>{
             setTimeout(()=>{
                 resolve(products)
-            }, 3000);
+            }, 1000);
         })
     }
 
     return (
         <>
-        <div className='text-3xl font-bold m-7 flex justify-center'>itemList</div>
-        <div className='flex flex-row justify-center'>
+        <div className='text-3xl font-bold m-7 flex justify-center'>Productos</div>
+        <div className='flex flex-row justify-around '>
         {items.map ( i => <ItemCard key = {i.id} {...i} />)}
         </div>
         </>
