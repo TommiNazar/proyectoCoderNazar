@@ -1,22 +1,23 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Carrito from './carrito';
+import { Link } from "react-router-dom";
 
 
 
 const NavBar = () => {
     return (
-        <div className="navbar bg-red-600">
+        <div className="navbar bg-neutral text-white">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl ">DistribucionFull</a>
+            <Link to={`/`} className="btn btn-ghost normal-case text-xl">DistribucionFull</Link>
             </div>
             <div className="flex-none">
                 {/* <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered" />
                 </div> */}
                 <ul className="menu menu-horizontal p-0 ">
-                    <li><a>nosotros</a></li>
-                    <li><a>productos</a></li>
+                    <li ><a>nosotros</a></li>
+                    <li><Link to={`item`}>productos</Link></li>
                     <li><a>login</a></li>
                     <li><a>contacto</a></li>
                 </ul>

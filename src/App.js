@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 import NavBar from './component/NavBar';
-import ItemListContainer from './component/ItemListContainer';
 import  ItemList from './component/ItemList';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ItemDetail from './component/ItemDetail';
+import Error404 from './component/Error404';
+import Index from './component/Index';
+import Footer from './component/Footer'
+
+
 
 function App() {
   return (
@@ -12,13 +16,18 @@ function App() {
       
       <BrowserRouter>
         <NavBar/>
-        <h1 className="text-3xl font-bold underline flex justify-center">distribucion de productos nestle</h1>
+        
 
         <Routes>
-          <Route path={'/'} element={<ItemList/>}/>
+          <Route path={'/'} element={<Index/>}/>
+          <Route path={'/item'} element={<ItemList/>}/>
           <Route path={'/item/:id'} element={<ItemDetail/>}/>
+          <Route path={'*'} element={<Error404/>}/>
           
         </Routes>
+        
+        <Footer/>
+      
       </BrowserRouter>
       
       

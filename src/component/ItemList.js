@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { products } from './data/products'
 import ItemCard from './ItemCard';
-import ItemDetail from './ItemDetail';
+
 
 
 

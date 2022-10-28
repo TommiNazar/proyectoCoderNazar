@@ -18,7 +18,7 @@ function ItemDetail() {
         return new Promise((resolve, reject) => {
             setTimeout(()=>{
                 resolve (products.find(p => p.id == itemId))
-            }, 1000)
+            })
         })
     }
 
@@ -26,7 +26,7 @@ function ItemDetail() {
     return (
     <div className='m-8'>
         <div>{item.name}</div>
-        <div>price: {item.price}</div>
+        <div>precio: {item.price}</div>
     </div>
     )
 }
